@@ -1,12 +1,33 @@
 import java.util.Scanner;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 20; i++) {
-            System.out.println("Procesando estudiante" + 1);
+        Scanner scanner = new Scanner(System.in);
+        int opcion = -1;
+
+        while (opcion != 0) {
+            System.out.println("=== SISTEMA DUOC ===");
+            System.out.println("1. Mostrar estado");
+            System.out.println("2. Procesar operación");
+            System.out.println("0. Salir");
+
+            System.out.print("Seleccione una opción: ");
+            opcion = scanner.nextInt();
+
+            if (opcion == 1) {
+                System.out.println("Sistema operativo.");
+            } else if (opcion == 2) {
+                System.out.println("Procesando operación...");
+            } else if (opcion == 0) {
+                System.out.println("Cerrando sistema...");
+            }
+
         }
+            for (int i = 1; i <= 2; i++) {
+                System.out.println("Procesando estudiante" + 1);
+            }
+
+
         Estudiante estudiante = new Estudiante(
 
                 "Ana",
@@ -15,8 +36,6 @@ public class Main {
         );
 
         Estudiante.mostrarInformacion();
-
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa tu nombre: ");
         String nombre = scanner.nextLine();
 
