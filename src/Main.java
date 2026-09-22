@@ -35,7 +35,7 @@ public class Main {
                 20
         );
 
-        Estudiante.mostrarInformacion();
+        estudiante.mostrarInformacion();
         System.out.println("Ingresa tu nombre: ");
         String nombre = scanner.nextLine();
 
@@ -60,7 +60,7 @@ public class Main {
         } else {
             System.out.println("Estudiante adulto");
         }
-        Estudiante.mostrarInformacion();
+        estudiante.mostrarInformacion();
 
 
     }

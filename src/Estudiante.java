@@ -1,8 +1,8 @@
 public class Estudiante {
 
-    private static String nombre;
-    private static String carrera;
-    private static int edad;
+    private  String nombre;
+    private  String carrera;
+    private  int edad;
 
     public Estudiante(String nombre, String carrera, int edad) {
         this.nombre = nombre;
@@ -35,7 +35,7 @@ public class Estudiante {
         this.edad = edad;
     }
 
-    public static void mostrarInformacion() {
+    public  void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Carrera: " + carrera);
         System.out.println("Edad: " + edad);
