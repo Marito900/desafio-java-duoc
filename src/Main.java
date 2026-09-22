@@ -63,5 +63,9 @@ public class Main {
         estudiante.mostrarInformacion();
 
 
+        Dispositivo dispositivo = new Dispositivo("Notebook hp", true);
+        dispositivo.mostrarEstado();
+        dispositivo.ejecutarDiagnostico();
+
     }
 }
