@@ -3,6 +3,10 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        for (int i = 1; i <= 20; i++) {
+            System.out.println("Procesando estudiante" + 1);
+        }
         Estudiante estudiante = new Estudiante(
 
                 "Ana",
